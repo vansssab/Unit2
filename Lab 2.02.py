@@ -47,7 +47,29 @@ Also, the theme park sells frequent rider passes: with a frequent rider pass the
 
 
 Are the following expressions equivalent? Research DeMorgan's Laws and write why you think they are the same or why they are not the same
-not(x or y) == not x and not y
-
+not(x or y) == not x and not y 
+  The following expressions are not equivlent. The or in the first espression indicates that at least one statement is true. The and in the second expression indicates that both statements are true. 
 not(x and y) == not x or not y
 '''
+'''
+age = 35
+resident_of_US = 14
+natural_born_citizen = True
+can_become_president = age >= 35 and resident_of_US >=14 and natural_born_citizen
+print(can_become_president)
+'''
+'''
+age = 16
+resident_of_US = 12
+natural_born_citizen = False
+cannot_become_president = age < 35 and resident_of_US < 14 and not natural_born_citizen
+print(cannot_become_president)
+'''
+#Can I Ride a Roller Coaster?
+
+height = input("How tall are you in inches? ")
+age = input("What is your age? ")
+quarters = input("How many quarters do you have? ")
+frequent_rider_pass = input("Do you have a frequent rider pass? ")
+can_ride_the_roller_coaster = int(height) > 50 or int(age) > 18 and int(quarters) > 4 or frequent_rider_pass
+print(can_ride_the_roller_coaster)
