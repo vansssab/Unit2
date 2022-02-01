@@ -1,6 +1,6 @@
 '''
 ##################################
-Lab 2.02 Booleans & Expressions
+ 2.02 Booleans & Expressions
 ##################################
 In your Notebook
 Predict if each of the following examples will produce a True or False output. Check your answers in interactive mode.
