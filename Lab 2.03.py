@@ -73,7 +73,7 @@ if x + y > z and x + z > y and y + z > x:
     print(f"The perimeter of the triangle is {perimeter}")
     if x * x + y *y == z * z:
         print("This is a right triangle.")
-    elif x == y and y == z:
+    if x == y and y == z:
         print("This is an equilateral triangle.")
     elif z == x or z == y or x == y:
         print("This is an isosceles triangle.")
