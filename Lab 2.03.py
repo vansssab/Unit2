@@ -65,17 +65,17 @@ Write code below the multiline comment
 '''
 #triangle_lab_program
 '''
-x = input("What is x? ")
-y = input("What is y? ")
-z = input("What is z? ")
-if int(x) + int(y) > int(z) and int(x) + int(z) > int(y) and int(y) + int(z) > int(x):
-    perimeter = int(x) + int(y) + int(z)
+x = int(input("What is x? "))
+y = int(input("What is y? "))
+z = int(input("What is z? "))
+if x + y > z and x + z > y and y + z > x:
+    perimeter = x + y + z
     print(f"The perimeter of the triangle is {perimeter}")
-    if int(x) * int(x) + int(y) *int(y) == int(z) * int(z):
+    if x * x + y *y == z * z:
         print("This is a right triangle.")
-    elif int(x) == int(y) and int(y) == int(z):
+    elif x == y and y == z:
         print("This is an equilateral triangle.")
-    elif int(z) == int(x) or int(z) == int(y) or int(x) == int(y):
+    elif z == x or z == y or x == y:
         print("This is an isosceles triangle.")
     else: 
         print("This is a scalene triangle.")
