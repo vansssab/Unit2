@@ -8,20 +8,20 @@ Predict if each of the following examples will produce a True or False output. C
 Example 1
     >>> a = 100
     >>> b = "science"
-    >>> a > 75 and b == "science"       Prediction: true                    Actual: true
+    >>> a > 75 and b == "science"       Prediction:                     Actual:
 Example 2
     >>> a = 100
     >>> b = "science"
-    >>> a > 75 and b != "science"       Prediction:  false                   Actual: false
+    >>> a > 75 and b != "science"       Prediction:                     Actual:
 Example 3
     >>> a = 100
     >>> b = "science"
-    >>> a > 75 or b != "science"        Prediction:   false                  Actual: false
+    >>> a > 75 or b != "science"        Prediction:                     Actual:
 Example 4
     >>> a = 100
     >>> b = "science"
     >>> c = True
-    >>> not c and a > 75 and b == "science"     Prediction:  false                   Actual: false
+    >>> not c and a > 75 and b == "science"     Prediction:                     Actual:
 
 In your Console
 
