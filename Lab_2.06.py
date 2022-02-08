@@ -10,8 +10,8 @@ Example 1
     while a < 10:
         print(a)
 
-prediction: 0
-actual: repeated 0
+prediction:
+actual:
 
 Example 2
     a = 0
@@ -19,8 +19,8 @@ Example 2
         a = a + 1
         print(a)
 
-prediction: 1
-actual: 1 2 3 4 5 6 7 8 9 10
+prediction:
+actual:
 
 2. In your Notebook
 -------------------
@@ -52,8 +52,3 @@ Print the updated board out.
 You will not need to determine the winner at this point.
 (Copy and paste your previous tic-tac-toe version and modify the code to implement the above)
 '''
-#test cases
-test_cases = ['y', 'n', 'q', 'cat']
-a = input("Would you like to quit: ")
-while a != "y" and a != "n" :
-    a = input("Would you like to quit: ")
