@@ -30,7 +30,7 @@ Create a set of test cases for the following sample code and predict the behavio
         a = input("Would you like to quit: ")
 
 test cases: 'y', 'n', 'q', 'cat'
-
+    It will repeat the question unless 'y' or 'n' is an answer.
 3. Implement the Tic Tac Toe game using a while loop
 ----------------------------------------------------
 Allow users to keep playing (max 9 times).
