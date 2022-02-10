@@ -6,9 +6,9 @@ Do Now 2.06
 -------------------
 Answer the following
     1.  How would you print out something 10 times? What about 100? What about 1,000?
-
+while x < 11, while x < 101 , while x < 1001
     2.  Can you remember something from Snap! that might allow that?
-
+the repeat block 
 2. Open up the console
 ----------------------
 Type the following code using interactive mode:
@@ -19,11 +19,11 @@ while True:
 -------------------
 Write responses for the following:
     1.  What happens when you run this code?
-
+it prints a repeatedly/ forever
 Try using other Boolean expressions instead of True (e.g. 4 > 5 and 9 != 2), and explore what happens.
 
     2.  How would you print out something 10 times? What about 100? What about 1,000?
-
+while x < 11, while x < 101 , while x < 1001
 4.  Consider the following code and predict what it will do, then see what it actually does:
 --------------------------------------------------------------------------------------------
 n = 3
@@ -34,8 +34,8 @@ print('Blastoff!')
 
 ** you will need to run this in script mode or get an error
 
-prediction:
-actual:
+prediction: countdown then say blastoff
+actual: countdown then say blastoff
 
 5. In script mode...
 --------------------
@@ -53,5 +53,23 @@ while True:
         else:
             print(f"{animal}, a fine pet!")
 '''
-
-    
+#blas!toff
+'''
+n = 3
+while n > 0:
+    print(n)
+    n = n-1
+print('Blastoff!')
+'''   
+#pets
+great_pets = ['cat' , 'dog']
+while True:
+    animal = input("What is your favorite pet? ")
+    if animal == 'quit':
+        print("Bye")
+        break
+    else:
+        if animal in great_pets:
+            print("A great pet")
+        else:
+            print(f"{animal}, a fine pet!")
