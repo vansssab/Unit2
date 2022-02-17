@@ -49,27 +49,20 @@ while True:
         ("You made it to the prize!")
     
     #player choices
-    player_choices = input("What would you like to do? (left, right, up, down, grab, fight, inventory.) ")
+    player_choices = input("What would you like to do? (left, right, up, down, grab, fight, inventory, pass, back.) ")
     print(player_choices)
+    
     if player_choices == 'right':
         current_room += 1
         if current_room == 5:
             print("You can't go any further in that direction.")
             current_room = 4
-        elif location == 'monster' or location == 'boss_monster':
-            print("You cannot go past a monster. Therefore, you have been eaten and died.")
-            print("Game Over")
-            break
     
     elif player_choices == 'left':
         current_room -=1
         if current_room == -1:
             print("You can't go any further in that direction.")
             current_room = 0
-        elif location == 'monster' or location == 'boss_monster':
-            print("You cannot go past a monster. Therefore, you have been eaten and died.")
-            print("Game Over")
-            break
     
     elif player_choices == 'up':
         if location == 'stairs_up':
@@ -129,8 +122,29 @@ while True:
         print("You have:")
         print(' '.join(inventory))
     
+    elif player_choices == 'back':
+        if location == 'monster' or location == 'boss_monster':
+            current_room -= 1
+        else:
+            print("You can only go back if there is a monster in the room.")
+
+    elif player_choices == 'pass':
+        if location == 'monster' or location == 'boss_monster':
+            print("You cannot go past a monster. Therefore, you have been eaten and died.")
+            print("Game Over")
+            break
+        else:
+            print("You can only pass if there is a monster in the room")
+    
     else:
         print("That is not an option. Try again.")
+
+
+    # max of 3 in inventory
+    if len(inventory) > 3:
+        print("You can not have more than 3 items in your inventory.")
+        inventory.pop(3)
+
 
 
 
